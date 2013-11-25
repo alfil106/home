@@ -1,0 +1,17 @@
+#backtick id lifespan autorefresh cmd args...
+#backtick  1 ps auxwww |wc -l 
+#caption always 'alfil106'
+#caption always
+#caption always "%h %F %f%n %t |%C:%s %A|-» %l %u"
+#caption always "[%f%n %t]> |%C:%s %A| %l %u %>%W%<"
+#caption always "[%f%n %t]> |%C:%s %A| %l %u %>%W"
+#caption always "%{bg}[%f%n %t]%{-} |%C:%s %A| %l %u %L<%W%>"
+caption always "%{dy}[%f%n %t]%{-} |%{kG}%C:%s %A%{-}| %l %u %L<%W%>"
+#Aplico un tema de colores cuando corre screen
+#attrcolor b ".I"
+attrcolor b "G"
+attrcolor u "-u b"
+attrcolor i "+b"
+
+#Lo pienso usar para en caso de que no este corriendo conky
+#exec ps auxwww |grep conky |grep -v grep |wc -l; if[ $! eq 0 ]; then bash ~/run_conky ; fi
